@@ -3,7 +3,11 @@ public class Car {
     // Class variables (or fields)
     String make;
     String model;
-    public String getSound() {return "Beep beep!";}
+
+    public String getSound() {
+        return "Beep beep!";
+    }
+
     int year;
 
     // Constructor method
@@ -30,7 +34,10 @@ public class Car {
 class ElectricCar extends Car {
     // Additional subclass-specific variables
     @Override
-    public String getSound() {return "*Spaceship noises*";}
+    public String getSound() {
+        return "*Spaceship noises*";
+    }
+
     int batteryCapacity; // in kWh
 
     // Constructor for ElectricCar
@@ -44,7 +51,8 @@ class ElectricCar extends Car {
     @Override
     public void display() {
         // Customized display for ElectricCar
-        System.out.println("Electric Car details: " +year + " " + make + " " + model + " " + ", Battery Capacity: " + batteryCapacity + " kWh");
+        System.out.println("Electric Car details: " + year + " " + make + " " + model + " " + ", Battery Capacity: "
+                + batteryCapacity + " kWh");
     }
 
     // Method specific to ElectricCar
@@ -58,7 +66,10 @@ class ElectricCar extends Car {
 class SportsCar extends Car {
     // Additional subclass-specific variables
     @Override
-    public String getSound() {return "Vroooom";}
+    public String getSound() {
+        return "Vroooom";
+    }
+
     int maxSpeed; // in km/h
 
     // Constructor for SportsCar
@@ -71,6 +82,6 @@ class SportsCar extends Car {
     // Method specific to SportsCar
     public void displaySpeed() {
         System.out.println("Max speed of " + year + " " + make + " " + model + " is " + maxSpeed + " km/h");
-        
+
     }
 }
